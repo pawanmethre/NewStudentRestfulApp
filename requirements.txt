@@ -3,3 +3,4 @@ Flask-RESTful
 uwsgi
 psycopg2
 psycopg2==2.5.1
+bcrypt
