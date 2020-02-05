@@ -8,7 +8,7 @@ from  entities.user_entity import SignIn, UserRegister
 
 app = Flask(__name__)
 api = Api(app)
-
+#
 api.add_resource(Student, '/student')
 api.add_resource(UserRegister, '/auth/register')
 api.add_resource(SignIn, '/auth/signIn')
