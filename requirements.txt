@@ -3,4 +3,4 @@ Flask-RESTful
 uwsgi
 psycopg2
 bcrypt
-PyJWT
+pyjwt
