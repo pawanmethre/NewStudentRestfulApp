@@ -12,7 +12,9 @@ def disconnect_database(cur,con):
     con.close()
 
 def execute_query(query, data):
-    con = psycopg2.connect(database='student', user='postgres', password='108', port='5432', host='127.0.0.1')
+    con = psycopg2.connect(database=df0a7s9k9i8bh9, user='postgres', password='108', port='5432',
+                           host='//wxnboxwerxwxab:62aa8bf63483e06b6abab99f56e52495d3d5ea5bf4adcb37965fb84ee54f88ae@ec2-184-72-236-57.compute-1.amazonaws.com')
+
     cur = con.cursor()
     cur.execute(query, data)
     try:
@@ -52,7 +54,9 @@ def update_student_db(data):
         return {"message": "student branch updated successfully"}, 200
 
 def fetch_allStudents_db():
-    con = psycopg2.connect(database='student', user='postgres', password='108', port='5432', host='127.0.0.1')
+    con = psycopg2.connect(database=df0a7s9k9i8bh9, user='postgres', password='108', port='5432',
+                           host='//wxnboxwerxwxab:62aa8bf63483e06b6abab99f56e52495d3d5ea5bf4adcb37965fb84ee54f88ae@ec2-184-72-236-57.compute-1.amazonaws.com')
+
     cur = con.cursor()
     select_student = "SELECT * FROM students"
     cur.execute(select_student)
